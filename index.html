@@ -1,0 +1,782 @@
+<!Doctype>
+<html>
+<head>
+<title>task</title>
+<style>
+
+
+.header {
+    float: left;
+    width: 100%;
+    background-image: url(image/road1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    
+}
+.brush {
+    float: left;
+    width: 55%;
+    cursor: pointer;
+}
+.brush h1 {
+    color: #3AC9D9;
+     padding-left: 50px;
+    font-family: sans-serif;
+    font-size: x-large;
+}
+.navbar {
+    float: left;
+    width: 45%;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    list-style-type: none;
+}
+.navbar a {
+    text-decoration: none;
+    float: left;
+    display: inline-block;
+     padding: 0;
+    margin-left: 31px;
+    margin-top: 25px;
+    color: white;
+ 
+    font-family: sans-serif;
+    font-size: small;
+
+}
+.download {
+    float: left;
+    width: 20%;
+    top: 40%;
+    position: relative;
+    right: 10%;
+}
+.download button {
+    border: none;
+     width: 145px;
+    height: 42px;
+    position: relative;
+    left: 129px;
+    background-color: #3AC9D9;
+    color: white;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    cursor:pointer;
+}
+.download h2 {
+    color: white;
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: x-large;
+}
+.download {
+    float: left;
+    width: 35%;
+    top: 50%;
+    position: absolute;
+    left: 35%;
+   
+}
+.download span {
+    padding-left: 55px;
+}
+.brush span {
+    color: white;
+    padding-left: 2px;
+}
+.navbar a.active{
+ border-bottom:1px solid#fff;
+    padding-bottom: 5px;
+ 
+}
+.navbar a:hover{
+ border-bottom:1px solid#fff;
+    padding-bottom: 5px; 
+  
+
+}
+.rest {
+    float: left;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    background-color: #FAFAFA;
+}
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+.about {
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.about h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bolder
+}
+.about p {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 5px;
+}
+.get {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.pic {
+    float: left;
+    width: 45%;
+}
+.pic img {
+    width: 85%;
+    margin-left: 25px;
+}
+.dolor {
+    float: left;
+    width: 50%;
+}
+.dolor p {
+   
+    font-family: sans-serif;
+    color: #BCBCBC;
+    margin: 0;
+    padding-bottom: 9px;
+    padding-top: 23px
+}
+.dolor button {
+    border: none;
+    width: 145px;
+    height: 42px;
+    position: relative;
+  
+    background-color: #3AC9D9;
+    color: white;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.dolor h3 {
+    font-family: sans-serif;
+    font-size: larger;
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+.dolor span {
+    border-bottom: 4px solid#3AC9D9;
+    padding-bottom: 8px;
+}
+.set {
+    float: left;
+    width: 100%;
+    background-color: #F4F4F4;
+ 
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+.port {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.port h3 {
+    font-family: sans-serif;
+    text-align: center;
+}
+.port p {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 4px;
+color:#B9B9B9;
+}
+.well {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.one {
+    float: left;
+    width: 33%;
+    position: relative;
+}
+.one img {
+    width: 95%;
+}
+.read {
+    float: left;
+    width: 30%;
+}
+.read p {
+    position: absolute;
+    padding: 19px 30px 19px 27px;
+    top: 38%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    color: white;
+    border: 0.5px solid#fff;
+    cursor: pointer;
+}
+.image{
+opacity:1;
+display:block;
+transition: .5s ease;
+backfee-visibility:hidden;
+width:100%;
+}
+.middle {
+    top: 36%;
+    left: 29%;
+    transition: 0.3s ease;
+    opacity: 0;
+    width: 35%;
+    position: abosulte;
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+}
+.one:hover .image{
+ opacity:0.3;
+}
+.text {
+    border: 1px solid#fff;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.one:hover .middle{
+opacity:1;
+}
+.two:hover .middle{
+opacity:1;
+}
+.two:hover .image{
+ opacity:0.3;
+}
+.tax {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.upper {
+    top: 36%;
+    left: 29%;
+    transition: 0.3s ease;
+    opacity: 0;
+    width: 35%;
+    position: abosulte;
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+}
+.bike p {
+    float: left;
+    width: 46%;
+    padding-left: 9px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+.boy p {
+    float: left;
+    width: 46%;
+    padding-left: 9px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+.welcome {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+.two {
+    float: left;
+    width: 33%;
+       position: relative;
+}
+.bike {
+    float: left;
+    width: 95.5%;
+    background-color: white;
+}
+.two img {
+    width: 95%;
+}
+.bike span {
+    color: #B9B9B9;
+    padding-left: 126px;
+
+    font-size: 11px;
+    font-family: sans-serif;
+}
+.boy {
+    float: left;
+    width: 95.5%;
+    background-color: white;
+}
+.boy span {
+    color: #B9B9B9;
+    padding-left: 107px;
+
+    font-size: 11px;
+    font-family: sans-serif;
+}
+.content {
+    float: left;
+    width: 100%;
+    background-color: #FAFAFA;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.service {
+    float: left;
+    width: 100%;
+    padding-bottom: 30px;
+
+}
+.service h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: large;
+}
+.service p {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 5px;
+    color: #BCBCBC;
+}
+.photo {
+    float: left;
+    width: 19%;
+    margin-left: 30px;
+    padding: 14px;
+    background-color: white;
+}
+.photo:hover{
+
+    background-color: #3CC8D9;
+   color:white;
+
+}
+.photo button:hover{
+   background-color:white;
+   color:black;
+}
+.photo h1 {
+    font-size: x-large;
+    text-align: center;
+    font-family: sans-serif;
+    /* font-size: 25px; */
+}
+.photo hr {
+    width: 80px;
+}
+.photo p {
+    padding: 20px;
+}
+.photo button {
+    border: none;
+    width: 145px;
+    height: 42px;
+    margin-bottom: 10px;
+    margin-left: 42px;
+    background-color: #4B4B4B;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.painting {
+    float: left;
+    width: 100%;
+}
+.hope {
+    float: left;
+    width: 100%;
+background-color: #F4F4F4;
+   padding-bottom: 40px;
+padding-top:30px;
+}
+.contact {
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.contact h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: large;
+}
+.contact p {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 5px;
+    color: #BCBCBC;
+
+  
+}
+.info {
+    float: left;
+    width: 50%;
+}
+.info h1 {
+    font-family: sans-serif;
+    font-size: medium;
+      
+    padding-bottom: 33px;
+    padding-top: 23px;
+    margin: 0;
+
+}
+.info span {
+    border-bottom: 3px solid#3AC9D9;
+    padding-bottom: 10px;
+}
+.info p {
+    margin: 5px;
+    color: #BCBCBC;
+}
+.form {
+    float: left;
+    width: 50%;
+    margin-top: 15px;
+}
+.full {
+    float: left;
+    width: 100%;
+}
+.form {
+    float: left;
+    width: 50%;
+    margin-top: 15px;
+text-align: right;
+}
+.name {
+    float: left;
+    width: 50%;
+}
+.message input[type="text"] {
+    width: 95%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+}
+.email {
+    float: left;
+    width: 50%;
+}
+.subject input[type="text"] {
+    width: 95%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+}
+.name input[type="text"] {
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+}
+.message {
+    float: left;
+    width: 100%;
+margin-top: 25px;
+}
+.email input[type="text"] {
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+}
+.subject {
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+}
+textarea {
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: sans-serif;
+width: 95%;
+height:130px;
+    border: none;
+}
+ button {
+    border: none;
+     width: 145px;
+    height: 42px;
+ 
+    background-color: #3AC9D9;
+    color: white;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    cursor:pointer;
+}
+.footer p {
+    text-align: center;
+    color: white;
+}
+.footer {
+    float: left;
+    width: 100%;
+    background-color: #3AC9D9;
+}
+
+.like {
+  
+    background-color: #3CC8D9;
+    float: left;
+    width: 19%;
+
+    margin-left: 30px;
+    padding: 14px;
+}
+.like h1 {
+    font-size: x-large;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+.like hr {
+    width: 80px;
+}
+.like p {
+    padding: 20px;
+}
+.like button {
+    border: none;
+    width: 145px;
+    height: 42px;
+    margin-bottom: 10px;
+    margin-left: 42px;
+    background-color: #fff;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.up {
+    float: left;
+    width: 100%;
+}
+.one span {
+    filter: brightness(0.5);
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+
+<div class="brush">
+<h1>UlBrush<span>.</span></h1>
+</div>
+<div class="navbar">
+<ul>
+<li><a class="active" href="#">HOME</a></li>
+<li><a class="not-active" href="#">ABOUT US</a></li>
+<li><a href="#">PORTFOLO</a></li>
+<li><a href="#">SERVICE</a></li>
+<li><a href="#">CONTACT US</a></li>
+</ul>
+</div>
+<div class="download">
+<h2>THE ULTIMATE COLLECTION OF</h2>
+<h2><span>FREE PSD TEMPLATES!!</span></h2>
+<button>DOWNLOAD</button>
+</div>
+</div>
+
+
+<div class="rest">
+<div class="main">
+<div class="about">
+<h1>ABOUT US</h1>
+<p>Lorem ipsum sit amet tetuer adipiscing elit,sed diam nonummy nibh</p>
+<p>eulsmed tincidunt ut laoreet dolore magna.</p>
+</div>
+<div class="get">
+<div class="pic">
+<img src="image/car3.jpg">
+</div>
+<div class="dolor">
+<h3><span>Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit,</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<button>GET STARTED</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="set">
+<div class="main">
+<div class="port">
+<h3>PORTFOLIO</h3>
+<p>Lorem ipsum dolor sit amet tetuer adipiscing elit,sed diam nonummy nibh</p>
+<p>euismed tincidunt ul labreet dolore magna.</p>
+</div> 
+
+<div class="well">
+<div class="one">
+
+<img src="image/boy7.jpg" class="image">
+<div class="middle">
+<div class="text">Read More</div>
+</div>
+<div class="bike">
+<p>PROJECT ONE</p>
+<p><span>Design</span></p>
+</div>
+</div>
+<div class="one">
+<span><img src="image/boy2.jpg"></span>
+<div class="read">
+<p>READ MORE</p>
+</div>
+<div class="bike">
+<p>PROJECT ONE</p>
+<p><span>Logo</span></p>
+</div>
+</div>
+<div class="one">
+<img src="image/boy9.jpg" class="image">
+<div class="middle">
+<div class="text">Read More</div>
+</div>
+<div class="bike">
+<p>PROJECT TWO</p>
+<p><span>Photo</span></p>
+</div>
+</div>
+</div>
+<div class="welcome">
+<div class="two">
+<img src="image/bike1.jpg" class="image">
+<div class="middle">
+<div class="text">Read More</div>
+</div>
+<div class="boy">
+<p>PROJECT ONE</p>
+<p><span>Web Design</span></p>
+</div>
+</div>
+<div class="two">
+<img src="image/bike.jpg" class="image">
+<div class="middle">
+<div class="text">Read More</div>
+</div>
+<div class="boy">
+<p>PROJECT ONE</p>
+<p><span>Web Design</span></p>
+</div>
+</div>
+<div class="two">
+<img src="image/boy8.jpg" class="image">
+<div class="middle">
+<div class="text">Read More</div>
+</div>
+<div class="boy">
+<p>PROJECT ONE</p>
+<p><span>Web Design</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="main">
+<div class="service">
+<h1>SERVICES</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+<p> incididunt ut labore et dolore magna aliqua. </p>
+</div>
+<div class="painting">
+<div class="photo">
+<i class="fas fa-camera"></i>
+<h1>PHOTOGRAPHY</h1>
+<hr/>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+<button>Read More</button>
+</div>
+<div class="photo">
+
+<h1>PAINTING</h1>
+<hr/>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+<button>Read More</button>
+</div>
+
+<div class="photo">
+<h1>VIDEO EDITING</h1>
+<hr/>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+<button>Read More</button>
+</div>
+
+<div class="photo">
+<h1>WEB DESIGN</h1>
+<hr/>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+<button>Read More</button>
+</div>
+</div>
+</div>
+</div>
+<div class="hope">
+<div class="main">
+<div class="contact">
+<h1>CONTACT US</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+<p> incididunt ut labore et dolore magna aliqua. </p>
+</div>
+<div class="info">
+<h1><span>CONTACT INFO</span></h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h1>Address</h1>
+<p>1931 Dawson drive.</p>
+<p>15th avenue</p>
+<p>Little Rock AR 72211</p>
+</div>
+<div class="form">
+<div class="full">
+<div class="name">
+<input type="text" placeholder="Name...">
+</div>
+<div class="name">
+<input type="text" placeholder="E-Mail...">
+</div>
+</div>
+<div class="subject">
+<input type="text" placeholder="Subject">
+</div>
+<div class="message">
+<textarea type="text"placeholder="Message"></textarea>
+</div>
+<button>Submit</button>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<p>Copyright@2020UlBrush.</p>
+</div>
+</body>
+</html>
